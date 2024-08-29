@@ -13,6 +13,14 @@ a {
   text-decoration: none;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
 .text-xs {
   font-size: 12px;
 }
@@ -21,8 +29,17 @@ a {
   font-size: 24px;
 }
 
+.text-xl {
+  font-size: 40px;
+}
+
 .text-white {
   color: white;
+}
+
+.box-equal {
+  display: flex;
+  align-items: center;
 }
 
 .box-center {
@@ -53,6 +70,7 @@ a {
 .header {
   color: white;
   position: fixed;
+  z-index: 1;
   left: 0;
   right: 0;
   top: 0;
@@ -125,4 +143,99 @@ a {
   padding: 10px 14px;
   margin-left: 20px;
   border-radius: 9999px;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.slider h2 {
+  font-size: 40px;
+}
+
+.slider-header {
+  margin-bottom: 40px;
+}
+
+.slider-header a {
+  text-decoration: underline;
+}
+
+.slider .decoration {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+}
+
+.slider .decoration p {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 0;
+  opacity: 10%;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.slider-body {
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.slider .card {
+  margin: 20px;
+  background-color: #f3fafd;
+  box-shadow: 0 5px 5px lightgray;
+  padding: 20px;
+  border-radius: 20px;
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slider .card img {
+  width: 80%;
+}
+
+.slider .card .title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 10px;
+}
+
+.slider .card .desc {
+  font-size: 12px;
+}
+
+.slider .card a {
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.slider .card a span {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 2px solid #6ebe4a;
+}
+
+.inspiration h2 {
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.inspiration-container {
+  margin-top: 100px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }

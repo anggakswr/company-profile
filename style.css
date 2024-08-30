@@ -26,6 +26,10 @@ a {
   text-decoration: underline;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-xs {
   font-size: 12px;
 }
@@ -476,6 +480,7 @@ footer ul li i {
 .footer2,
 .footer2 .subscription {
   display: flex;
+  align-items: start;
   gap: 20px;
 }
 
@@ -502,4 +507,16 @@ footer ul li i {
   background-color: #0c2f4a;
   color: white;
   cursor: pointer;
+}
+
+.certification {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.certification .yellow-box {
+  border-radius: 20px;
+  background-color: #f2f2e4;
+  padding: 20px;
 }

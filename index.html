@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Titanium Print Shops</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -17,6 +18,10 @@
     <!-- header -->
     <header class="header bg-primary">
       <nav class="container box-between">
+        <a href="#" class="mobile-logo">
+          <h1>Titanium</h1>
+        </a>
+
         <div class="nav">
           <!-- logo -->
           <a href="#" class="logo">
@@ -40,7 +45,7 @@
     <!-- banner -->
     <section class="banner bg-primary">
       <div class="container box-between">
-        <div class="text-white">
+        <div id="banner-text" class="text-white">
           <p class="text-xs">TITANIUM PRINTING</p>
 
           <h2>
@@ -57,7 +62,7 @@
           </a>
         </div>
 
-        <div>
+        <div id="banner-img">
           <img src="./img/banner/bag.webp" alt="Totebag" />
         </div>
       </div>
@@ -74,14 +79,14 @@
 
       <div class="slider-header container box-between">
         <div style="width: 100%">
-          <h2>
+          <h2 id="slider-title">
             APA KEBUTUHAN
             <br />
             CETAKMU?
           </h2>
         </div>
 
-        <div style="width: 50%">
+        <div id="slider-desc" class="desc">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
             ullam minima tempora.
@@ -91,9 +96,9 @@
         </div>
       </div>
 
-      <div style="overflow: scroll">
+      <div class="no-scrollbar">
         <div class="slider-body">
-          <div class="card">
+          <div id="slider-card-1" class="card">
             <div class="box-center">
               <img src="./img/slider/1.webp" alt="Books" />
             </div>
@@ -116,7 +121,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div id="slider-card-2" class="card">
             <div class="box-center">
               <img src="./img/slider/2.webp" alt="Books" />
             </div>
@@ -139,7 +144,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div id="slider-card-3" class="card">
             <div class="box-center">
               <img src="./img/slider/3.webp" alt="Books" />
             </div>
@@ -162,7 +167,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div id="slider-card-4" class="card">
             <div class="box-center">
               <img src="./img/slider/4.webp" alt="Books" />
             </div>
@@ -204,7 +209,7 @@
         <p class="rotate-180">TITANIUM</p>
       </div>
 
-      <div class="box-center">
+      <div id="insp-title" class="box-center">
         <div>
           <h2 class="text-xl">
             Anda butuh
@@ -221,7 +226,7 @@
       </div>
 
       <div class="container inspiration-container">
-        <div class="card" style="background-color: #9f9f9f">
+        <div id="insp-card-1" class="card" style="background-color: #9f9f9f">
           <div class="box-center">
             <img src="./img/inspiration/1.png" alt="Books" />
           </div>
@@ -251,7 +256,7 @@
           </div>
         </div>
 
-        <div class="card" style="background-color: #cb2b2c">
+        <div id="insp-card-2" class="card" style="background-color: #cb2b2c">
           <div class="box-center">
             <img src="./img/inspiration/2.png" alt="Books" />
           </div>
@@ -281,7 +286,7 @@
           </div>
         </div>
 
-        <div class="card" style="background-color: #4fb5d1">
+        <div id="insp-card-3" class="card" style="background-color: #4fb5d1">
           <div class="box-center">
             <img src="./img/inspiration/3.png" alt="Books" />
           </div>
@@ -311,7 +316,7 @@
           </div>
         </div>
 
-        <div class="card" style="background-color: #4fb5d1">
+        <div id="insp-card-4" class="card" style="background-color: #4fb5d1">
           <div class="box-center">
             <img src="./img/inspiration/4.png" alt="Books" />
           </div>
@@ -341,7 +346,7 @@
           </div>
         </div>
 
-        <div class="card" style="background-color: #f8b3d4">
+        <div id="insp-card-5" class="card" style="background-color: #f8b3d4">
           <div class="box-center">
             <img src="./img/inspiration/5.png" alt="Books" />
           </div>
@@ -371,7 +376,7 @@
           </div>
         </div>
 
-        <div class="card" style="background-color: #b8b938">
+        <div id="insp-card-6" class="card" style="background-color: #b8b938">
           <div class="box-center">
             <img src="./img/inspiration/6.png" alt="Books" />
           </div>
@@ -401,7 +406,7 @@
           </div>
         </div>
 
-        <div class="card" style="background-color: #0c8ed4">
+        <div id="insp-card-7" class="card" style="background-color: #0c8ed4">
           <div class="box-center">
             <img src="./img/inspiration/7.png" alt="Books" />
           </div>
@@ -431,7 +436,7 @@
           </div>
         </div>
 
-        <div class="card" style="background-color: #f8b71f">
+        <div id="insp-card-8" class="card" style="background-color: #f8b71f">
           <div class="box-center">
             <img src="./img/inspiration/8.png" alt="Books" />
           </div>
@@ -469,14 +474,14 @@
       <div class="big-navy-circle"></div>
 
       <div class="container">
-        <h2>
+        <h2 id="serv-title">
           APA YANG
           <br />
           MEMBEDAKAN KAMI?
         </h2>
 
         <div class="grid">
-          <div class="card">
+          <div id="serv-card-1" class="card">
             <!-- top right icon -->
             <div class="box-end text-green">
               <i class="tr-icon fa-solid fa-arrow-right"></i>
@@ -496,7 +501,7 @@
             </p>
           </div>
 
-          <div class="card">
+          <div id="serv-card-2" class="card">
             <!-- top right icon -->
             <div class="box-end text-green">
               <i class="tr-icon fa-solid fa-arrow-right"></i>
@@ -516,7 +521,7 @@
             </p>
           </div>
 
-          <div class="card">
+          <div id="serv-card-3" class="card">
             <!-- top right icon -->
             <div class="box-end text-green">
               <i class="tr-icon fa-solid fa-arrow-right"></i>
@@ -536,7 +541,7 @@
             </p>
           </div>
 
-          <div class="card">
+          <div id="serv-card-4" class="card">
             <!-- top right icon -->
             <div class="box-end text-green">
               <i class="tr-icon fa-solid fa-arrow-right"></i>
@@ -569,11 +574,11 @@
     <!-- solution -->
     <section class="solution">
       <div class="container box-equal">
-        <div class="w-50">
+        <div id="sol-title" class="w-50">
           <img src="./img/solution/people.webp" alt="People" />
         </div>
 
-        <div class="w-50 text-white">
+        <div id="sol-desc" class="w-50 text-white">
           <h2 class="text-xl">SOLUSI TERBAIK BISNIS ANDA</h2>
 
           <p>
@@ -591,7 +596,7 @@
       <div class="big-white-circle"></div>
 
       <div class="container footer1 box-equal">
-        <div class="w-50 box-center flex-col">
+        <div id="footer1" class="w-50 box-center flex-col">
           <p>info@titanium.co.id</p>
 
           <div class="box-equal social-media">
@@ -601,7 +606,7 @@
           </div>
         </div>
 
-        <div class="w-50 list">
+        <div id="footer2" class="w-50 list">
           <div>
             <p class="font-bold">Produk</p>
 
@@ -710,29 +715,34 @@
       </div>
 
       <div class="container footer2">
-        <div class="w-50 subscription">
-          <p class="text-sm">
-            Jl. Raya Kalirungkut No. 1C, Panjang Jiwo, Kec. Tenggilis Mejoyo,
-            Surabaya, Jawa Timur 60299
-          </p>
+        <div id="footer3" class="w-50 subscription">
+          <div>
+            <p class="text-sm">
+              Jl. Raya Kalirungkut No. 1C, Panjang Jiwo, Kec. Tenggilis Mejoyo,
+              Surabaya, Jawa Timur 60299
+            </p>
+          </div>
 
           <form class="relative">
             <p class="font-bold">Berlangganan</p>
 
             <input type="text" placeholder="Nama anda" />
-            <input
-              type="text"
-              placeholder="Alamat E-mail"
-              style="margin-bottom: 0"
-            />
 
-            <button class="box-center">
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Alamat E-mail"
+                style="margin-bottom: 0"
+              />
+
+              <button class="box-center">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
           </form>
         </div>
 
-        <div class="w-50">
+        <div id="footer4" class="w-50">
           <p class="font-bold">Sertifikasi</p>
 
           <div class="certification">
@@ -779,5 +789,7 @@
         <b style="color: black">Crooud Agency</b>.
       </p>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>

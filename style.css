@@ -81,6 +81,7 @@ a {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
+  overflow: hidden;
 }
 
 .text-green {
@@ -101,7 +102,7 @@ a {
 }
 
 .header .nav {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 30px;
 }
@@ -138,7 +139,8 @@ a {
 }
 
 .banner .container {
-  padding: 100px 0;
+  display: block;
+  padding: 100px 20px;
 }
 
 .banner h2 {
@@ -181,10 +183,22 @@ a {
 
 .slider-header {
   margin-bottom: 40px;
+  display: block;
+}
+
+.slider-header .desc {
+  width: 100%;
 }
 
 .slider-header a {
   text-decoration: underline;
+}
+
+.slider,
+.inspiration,
+.services,
+footer {
+  overflow: hidden;
 }
 
 .slider .decoration,
@@ -284,7 +298,7 @@ a {
   margin-top: 100px;
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
 }
 
 .inspiration .card {
@@ -299,6 +313,7 @@ a {
 
 .inspiration .card h3 {
   font-size: 20px;
+  text-align: center;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -325,6 +340,7 @@ a {
 }
 
 .inspiration .card a span {
+  min-width: 20px;
   width: 20px;
   height: 20px;
   border-radius: 100%;
@@ -366,7 +382,6 @@ a {
 .services .container .grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .services .container h2 {
@@ -420,7 +435,7 @@ a {
 
 .solution .w-50,
 footer .w-50 {
-  width: 50%;
+  width: auto;
   padding: 20px;
 }
 
@@ -457,6 +472,7 @@ footer .list {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-direction: column;
 }
 
 footer ul {
@@ -474,6 +490,7 @@ footer ul li i {
 }
 
 .footer1 {
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -482,6 +499,7 @@ footer ul li i {
   display: flex;
   align-items: start;
   gap: 20px;
+  flex-direction: column;
 }
 
 .subscription input {
@@ -519,4 +537,29 @@ footer ul li i {
   border-radius: 20px;
   background-color: #f2f2e4;
   padding: 20px;
+}
+
+.no-scrollbar {
+  overflow: scroll;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.solution .container {
+  display: block;
+}
+
+.banner img {
+  width: 80%;
+}
+
+.footer2 .w-50 {
+  width: 80%;
 }

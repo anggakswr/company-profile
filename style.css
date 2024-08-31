@@ -127,6 +127,9 @@ a {
   font-size: 8px;
   flex-direction: column;
   font-weight: 700;
+  background-color: #0c2f4a;
+  color: white;
+  cursor: pointer;
 }
 
 .header .container {
@@ -475,7 +478,7 @@ footer .list {
   flex-direction: column;
 }
 
-footer ul {
+ul {
   list-style-type: none;
   padding-left: 0;
 }
@@ -562,4 +565,21 @@ footer ul li i {
 
 .footer2 .w-50 {
   width: 80%;
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 2;
+  inset: 0;
+  top: 88px;
+  background-color: #0c2f4a;
+  color: white;
+  border-top: 1px solid white;
+}
+
+.mobile-menu li a {
+  display: block;
+  padding: 30px;
+  border-bottom: 1px solid white;
+  font-weight: 700;
 }

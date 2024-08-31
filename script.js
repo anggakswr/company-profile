@@ -77,6 +77,17 @@ window.addEventListener("scroll", (e) => {
       }
     }
   });
-
-  console.log(activeElements);
 });
+
+function toggleMenu() {
+  const el = document.querySelector(".mobile-menu");
+
+  // if (!el.style.display || el.style.display === "none") {
+  if (!el.style.transform || el.style.transform === "translateX(100%)") {
+    // el.style.display = "block";
+    el.style.transform = "translateX(0)";
+  } else {
+    // el.style.display = "none";
+    el.style.transform = "translateX(100%)";
+  }
+}
